@@ -14,3 +14,15 @@ const fooTwo = (item, index) => {
   console.log(`FooTwo: ${index} - ${item}`)
 }
 ```
+
+_Ans_
+
+```
+Declare Item: 0 - 1
+Declare Item: 1 - 2
+Declare Item: 2 - 3
+Declare Item: 3 - 4
+Uncaught ReferenceError: Cannot access 'fooTwo' before initialization
+    at Line No:4
+(anonymous) @ Line No:4
+```
