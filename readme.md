@@ -26,3 +26,28 @@ Uncaught ReferenceError: Cannot access 'fooTwo' before initialization
     at Line No:4
 (anonymous) @ Line No:4
 ```
+
+# What will be the output of following code?
+
+```
+function MyNumberOperation(n) {
+  this.number = n
+  this.square = n * n
+}
+
+MyNumberOperation.prototype.valueOf = function() {
+  return this.number + this.square
+}
+
+const object1 = new MyNumberOperation(4)
+
+console.log(object1)
+console.log(object1 + 3)
+```
+
+_Ans_
+
+```
+MyNumberOperation {number: 4, x: 16}
+23
+```
