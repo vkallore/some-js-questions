@@ -51,3 +51,103 @@ _Ans_
 MyNumberOperation {number: 4, x: 16}
 23
 ```
+
+# What will be the output of following code?
+
+```
+const arr = [9, 0, 2, 3, 1]
+const res = arr.find(x => {
+  console.log(x)
+  return x < 2
+})
+console.log(res)
+```
+
+_Ans_
+
+```
+9
+0
+0
+```
+
+# What will be the output of following code?
+
+```
+const arr = [9, 0, 2, 3, 1]
+const res = arr.some(x => {
+  console.log(x)
+  return x < 2
+})
+console.log(res)
+```
+
+_Ans_
+
+```
+9
+0
+true
+```
+
+# What is the difference between following code block?
+
+A)
+
+```
+const arr = [9, 1, 2, 8, 2, 3, 1, 0, 3, 7]
+const num = 3
+
+const arrFilter = arr.filter(x => {
+  console.log(x)
+  return x === num
+})
+console.log(arrFilter)
+```
+
+B)
+
+```
+const arr = [9, 1, 2, 8, 2, 3, 1, 0, 3, 7]
+const num = 3
+
+const arrFind = arr.find(x => {
+  console.log(x)
+  return x === num
+})
+console.log(arrFind)
+```
+
+_Ans_
+
+A)
+
+```
+9
+1
+2
+8
+2
+3
+1
+0
+3
+7
+
+(2) [3, 3]
+  0: 3
+  1: 3
+```
+
+B)
+
+```
+9
+1
+2
+8
+2
+3
+
+3
+```
